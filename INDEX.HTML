@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="STYLE.CSS" />
+    <title>Les operateurs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DES NOTIONS TRÉS IMPORTANTES !!</h1>
+      <!----------------------- documentation sur les operateurs ----------------------->
+      <div class="operateurs">
+        <h2>Quels sont les types d’opérateurs qui existent ?</h2>
+        <ul>
+          <li>Opérateurs d'assignation(ou d'affectation)</li>
+          <li>Opérateurs de calcul</li>
+          <li>Opérateurs de comparaison</li>
+          <li>Opérateurs logiques</li>
+        </ul>
+        <hr />
+      </div>
+      <!----------------------- documentation exit ----------------------->
+      <!----------------------- documentation sur les tableaux ----------------------->
+      <div class="tables">
+        <!-- declaration d'un tableau -->
+        <div class="declaration">
+          <h2>Comment déclarer un tableau en javascript ?</h2>
+          <p>
+            En JavaScript, un tableau (ou array en anglais) est une structure
+            qui permet de stocker plusieurs valeurs dans une seule variable.
+            <br />
+            Voici les différentes façons de déclarer un tableau en JavaScript :
+          </p>
+          <ol>
+            <li>
+              Déclaration simple avec crochets [ ] : <br />
+              ex: <br />
+              let monTableau = []; <br />
+              let nombres = [1, 2, 3, 4, 5]; <br />
+              let couleurs = ["rouge", "bleu", "vert"];
+            </li>
+            <li>
+              Déclaration avec le constructeur Array : <br />
+              <p>
+                Il est également possible de créer un tableau en utilisant le
+                constructeur Array, mais ce n'est pas aussi courant que
+                l'utilisation des crochets.
+              </p>
+              <p>
+                Voici un exemple : <br />
+                let monTableau = new Array(5);
+              </p>
+            </li>
+          </ol>
+          <p class="notes">
+            NB : Un tableau peut contenir des valeurs de types différents, par
+            exemple des nombres, des chaînes de caractères, des objets, etc.
+          </p>
+          <hr />
+        </div>
+        <!-- declaration d'un tableau exit -->
+
+        <h2>Quels sont les contextes d’utilisations de tableaux ?</h2>
+        <p>
+          Les tableaux en JavaScript sont utilisés dans plusieurs contextes car
+          ils permettent de stocker et manipuler des collections de données de
+          manière flexible. Voici quelques contextes courants d'utilisation des
+          tableaux :
+        </p>
+        <!-- premier cas -->
+        <h3>Stockage de données similaires :</h3>
+        <p>
+          Un tableau est souvent utilisé pour regrouper plusieurs éléments de
+          même type (nombres, chaînes, objets, etc.) afin de les manipuler plus
+          facilement.
+        </p>
+        <!-- premier cas exit -->
+        <!-- deuxieme cas -->
+        <h3>Manipuler des collections d'objets :</h3>
+        <p>
+          Les tableaux sont souvent utilisés pour regrouper des objets dans des
+          situations où chaque objet représente une entité plus complexe (comme
+          un utilisateur, un produit, etc.).
+        </p>
+        <!-- deuxieme cas exit -->
+      </div>
+      <!----------------------- documentation sur les tableaux exit ----------------------->
+      <!-- affichage du tableau -->
+      <div class="affichage_tableau"></div>
+      <!-- affichage du tableau exit -->
+    </div>
+  </body>
+  <script src="MAIN.JS"></script>
+</html>
