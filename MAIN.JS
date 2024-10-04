@@ -34,3 +34,36 @@ let eleveData = [
   { prenom: "JOHN", nom: "DOE", age: 20, note: 13 },
 ];
 console.log(eleveData);
+
+// Cibler l'élément <tbody> où on va insérer les lignes de données
+let tableBody = document.getElementById("table-body");
+
+// Parcourir chaque élève et créer une ligne pour chaque
+eleveData.forEach(function (eleve) {
+  // Créer une nouvelle ligne
+  let row = document.createElement("tr");
+
+  // Créer et ajouter les cellules pour chaque propriété (prenom, nom, age, note)
+  let prenomCell = document.createElement("td");
+  prenomCell.textContent = eleve.prenom;
+  row.appendChild(prenomCell);
+
+  let nomCell = document.createElement("td");
+  nomCell.textContent = eleve.nom;
+  row.appendChild(nomCell);
+
+  let ageCell = document.createElement("td");
+  ageCell.textContent = eleve.age;
+  row.appendChild(ageCell);
+
+  let noteCell = document.createElement("td");
+  noteCell.textContent = eleve.note;
+  row.appendChild(noteCell);
+
+  // Ajouter la ligne complète au tableau
+  tableBody.appendChild(row);
+});
+
+eleveData.forEach(function (eleve) {
+  console.log("Ajout de l'élève :", eleve); // Cela affichera chaque élève dans la console
+});
