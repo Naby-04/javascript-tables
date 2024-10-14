@@ -53,3 +53,8 @@ td {
   text-align: center;
   max-width: 10px;
 }
+thead,
+tr:nth-child(even) {
+  background: #ddd;
+  color: #000;
+}
