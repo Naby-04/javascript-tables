@@ -160,3 +160,41 @@ console.table(tableau1.tab1);
 console.table(tableau1.tab2);
 tableau1.CreateTab3();
 tableau1.CreateTab4();
+
+// -------------------------------------- 2
+// Soit un tableau tab1=[5,3,87,1,-4,-99,0]
+// Sans utiliser les methodes javascript :
+// 1. Ecrire une fonction qui  reçoit en parametre tab1 et qui permet de le trier
+
+let tab1 = [5, 3, 87, 1, -4, -99, 0];
+function trierTableau(tab) {
+  let temp;
+  for (let i = 0; i < tab.length; i++) {
+    for (let j = i + 1; j < tab.length; j++) {
+      if (tab[i] > tab[j]) {
+        temp = tab[i];
+        tab[i] = tab[j];
+        tab[j] = temp;
+      }
+    }
+  }
+  console.log("Tableau trié :", tab);
+}
+trierTableau(tab1);
+
+// 2. Ecrire une fonction qui reçoit en parametre tab1 et retourne la valeur max , min
+
+function maxMin(tab) {
+  let max = tab[0];
+  let min = tab[0];
+  for (let i = 0; i < tab.length; i++) {
+    if (tab[i] > max) {
+      max = tab[i];
+    }
+    if (tab[i] < min) {
+      min = tab[i];
+    }
+  }
+  console.log("Max :", max, "Min :", min);
+}
+maxMin(tab1);
